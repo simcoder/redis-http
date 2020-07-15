@@ -1,0 +1,19 @@
+{
+    "name": "redis-http",
+    "version": "1.0.0",
+    "description": "redis app http interface",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/simcoder/redis-http.git"
+    },
+    "author": "simcoder",
+    "license": "MIT",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
