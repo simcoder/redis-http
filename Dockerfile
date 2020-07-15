@@ -5,14 +5,12 @@ EXPOSE 6379
 
 RUN apk add --update nodejs npm
 WORKDIR /app
-COPY app.js .
-COPY package.json .
-
+COPY . .
 RUN npm install && \
     npm install -g concurrently 
 
 EXPOSE 3000
 
-CMD concurrently "redis-server /usr/local/etc/redis/redis.conf" "sleep 5s; node app.js" 
+CMD concurrently "redis-server /usr/local/etc/redis/redis.conf" "sleep 3s; node app.js" 
 
 
