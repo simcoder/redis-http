@@ -8,8 +8,13 @@ use case scenario:
 
 # redis-http install
 
-docker pull simcoder/redis-http:latest
+`docker run -p 3000:3000 simcoder/redis-http:latest`
+
+navigate to localhost:3000/health
 
 or clone this repo and run
 
-docker build -t redis-http .
+`docker build -t redis-http . && docker run -p 3000:3000 redis-http`
+
+navigate to localhost:3000/health
+
